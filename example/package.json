@@ -3,12 +3,13 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "setup:addon": "npm pack .. --pack-destination . && npm i ./slidev-addon-presenter-top-0.1.0.tgz",
     "dev": "slidev --open",
     "build": "slidev build"
   },
   "dependencies": {
     "@slidev/cli": "^52.1.0",
     "@slidev/theme-default": "latest",
-    "slidev-addon-presenter-top": "file:.."
+    "slidev-addon-presenter-top": "file:slidev-addon-presenter-top-0.1.0.tgz"
   }
 }

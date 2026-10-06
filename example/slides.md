@@ -19,12 +19,13 @@ out that the notes panel stays readable on any screen width.
 layout: two-cols
 ---
 
+::left::
+
 # Click steps
 
-This slide has click animations:
+This slide has click animations.
 
-::default::
-- Left content, shown first
+Left column, shown first.
 
 ::right::
 - <span v-click>Appears on the first click</span>

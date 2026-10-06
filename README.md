@@ -87,9 +87,15 @@ slidev-addon-presenter-top/
 
 ```bash
 cd example
-npm i                 # installs @slidev/cli and this addon via file:..
-npx slidev            # open http://localhost:3030/presenter/
+npm run setup:addon   # packs the addon into a tarball and installs it (plus Slidev)
+npm run dev           # open http://localhost:3030/presenter/
 ```
+
+The addon is installed from a tarball (`npm pack`) rather than a `file:../`
+symlink on purpose: the component imports `@slidev/client/*`, which resolves
+from the package's real location. A symlinked install would point outside the
+example's `node_modules` and break both module resolution and Vite's `fs.allow`
+allowlist. A tarball install is identical to what end users get from npm.
 
 ## License
 
