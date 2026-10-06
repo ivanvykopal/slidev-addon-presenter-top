@@ -1,0 +1,25 @@
+{
+  "name": "slidev-addon-presenter-top",
+  "version": "0.1.0",
+  "description": "Slidev addon: presenter view with speaker notes in a resizable top panel and current/next slides side by side below",
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "slidev-addon",
+    "slidev",
+    "presenter",
+    "speaker-notes",
+    "presenter-view"
+  ],
+  "files": [
+    "setup",
+    "components"
+  ],
+  "engines": {
+    "node": ">=20.12.0",
+    "slidev": ">=52"
+  },
+  "peerDependencies": {
+    "@slidev/cli": ">=52"
+  }
+}

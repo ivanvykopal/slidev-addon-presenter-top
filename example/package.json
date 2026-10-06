@@ -1,0 +1,14 @@
+{
+  "name": "slidev-addon-presenter-top-example",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "slidev --open",
+    "build": "slidev build"
+  },
+  "dependencies": {
+    "@slidev/cli": "^52.1.0",
+    "@slidev/theme-default": "latest",
+    "slidev-addon-presenter-top": "file:.."
+  }
+}
